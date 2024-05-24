@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background:linear-gradient(to bottom right, rgba(22, 0, 134, 0.658),rgba(154, 0, 209, 0.777));
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.baseDeFora{
+    width: 290px;
+    height: 130px;
+    background-color: rgba(0, 255, 255, 0.355);
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 2px;
+
+}
+.contorno{
+    height: 80%;
+    width:100%;
+    border-radius: 5px;
+
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    background-color: white;
+
+}
