@@ -1,41 +1,48 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+* {
     margin: 0;
     padding: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
-body{
+body {
     height: 100vh;
-    width: 100vw;
-    background:linear-gradient(to bottom right, rgba(22, 0, 134, 0.658),rgba(154, 0, 209, 0.777));
+    background: linear-gradient(120deg, #4f3bffd8, #25d7ffda);
+    display: flex;
     align-items: center;
     justify-content: center;
-    display: flex;
 }
-.baseDeFora{
-    width: 290px;
-    height: 130px;
-    background-color: rgba(0, 255, 255, 0.355);
+
+.relogio {
     display: flex;
-    border-radius: 5px;
-    overflow: hidden;
     align-items: center;
-
-    justify-content: space-between;
-    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.397);
-   
-
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.531);
 }
-.contorno{
-    height: 80%;
-    width:25%;
-    margin: 12px;
-    border-radius: 5px;
-    box-shadow: 3px 5px 5px rgba(0, 0, 0, 0.397);
 
+.relogio div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    display: flex;
+    color: #fff;
+    background: rgb(5, 5, 5);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
 
-    background-color: white;
+.relogio span {
+    font-weight: bolder;
+    font-size: 60px;
+}
 
+.relogio span.tempo {
+    font-size: 10px;
 }

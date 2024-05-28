@@ -1,21 +1,22 @@
-const horas = document.getElementByid('horas');
+const horas = document.getElementById('horas');
+const minutos = document.getElementById('minutos');
+const segundos = document.getElementById('segundos');
 
-const minutos = document.getElementByid('minutos');
-
-const segundos = document.getElementByid('segundos');
-
-const relogio = setInterval (function time(){
+const relogio = setInterval(function time() {
     let dateToday = new Date();
-    let hor = dateToday.getHours();
+    let hr = dateToday.getHours();
     let min = dateToday.getMinutes();
     let s = dateToday.getSeconds();
 
-    horas.textContent = hor;
+    if (hr < 10) hr = '0' + hr;
+
+    if (min < 10) min = '0' + min;
+
+    if (s < 10) s = '0' + s;
+
+    horas.textContent = hr;
     minutos.textContent = min;
     segundos.textContent = s;
 
-
-
 })
-
 
